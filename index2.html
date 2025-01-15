@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Methods</title>
+    </head>
+    <body>
+        <h1>Methods performed on an array</h1>
+        <p id="joined"></p><!--display the result of joined array-->
+        <p id="popped"></p><!--display the result of popped array-->
+        <script>
+            //create the array
+            var fruits = ["Mango","Apples","Banana","Papaya","Watermelon"];
+            //join the elements using a special character
+            document.getElementById("joined").innerHTML="The joined array is: " +fruits.join("*");
+            //pop the  last element found in the array
+            document.getElementById("popped").innerHTML="The poped Array is: " + fruits.pop();
+        </script>
+    </body>
+</html>
