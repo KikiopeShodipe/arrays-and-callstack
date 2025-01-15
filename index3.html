@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Call Stack</title>
+    </head>
+    <body>
+        <h1>Call Stack in JS</h1>
+        <p>Call stack is a method in which several functions are executed</p>
+        <p id="demo"></p>
+        <script>
+            //function to add 2 numbers
+            function add(a,b){
+                return a+b;
+            }
+            //function to find the average
+            function average(a,b){
+                return add(a,b)/2;
+            }
+            var result = average(10,20)
+            document.getElementById("demo").innerHTML="The average of 10 and 20:" + result;
+        </script>
+    </body>
+</html>
